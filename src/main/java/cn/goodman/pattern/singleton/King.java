@@ -10,6 +10,7 @@ public class King {
     private static Date beginDate = null;
     private King() {
         // 这里用来限制私自实例化
+        beginDate = new Date();
     }
     public static King getInstance() {
         if (king == null) {
@@ -18,7 +19,6 @@ public class King {
                 // double check
                 if (king == null) {
                     king = new King();
-                    beginDate = new Date();
                 }
             }
         }
