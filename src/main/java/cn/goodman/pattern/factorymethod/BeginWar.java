@@ -21,5 +21,10 @@ public class BeginWar {
         FireBat fireBat = (FireBat) ff.createInfantry();
         fireBat.run();
         fireBat.attack();
+
+        IVehicleFactory vf = new TankFactory();
+        Tank tank = (Tank) vf.createVehicle();
+        tank.wheel();
+        tank.fire();
     }
 }
